@@ -12,7 +12,7 @@ const CopyrightPage: React.FC = () => {
           <IonCard>
             <IonCardContent>
               <div style={{ textAlign: 'center', padding: '24px 0' }}>
-                <p style={{ fontSize: '16px', fontWeight: 700, marginBottom: '8px' }}>Sistem Inventori Prabungkus Hospital Keningau</p>
+                <p style={{ fontSize: '16px', fontWeight: 700, marginBottom: '8px' }}>Sistem Inventori Farmasi</p>
                 <p style={{ color: '#6b7280', marginBottom: '24px' }}>Versi 2.0</p>
 
                 <div style={{ marginBottom: '24px' }}>

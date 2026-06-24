@@ -7,12 +7,12 @@ const MorePage: React.FC = () => {
   const history = useHistory();
 
   const menuItems = [
-    { label: 'Kumpulan', icon: people, path: '/groups' },
-    { label: 'Edit Pesanan', icon: create, path: '/edit-order' },
+    { label: 'Pengurusan Kumpulan', icon: people, path: '/groups' },
+    { label: 'Senarai Pesanan', icon: create, path: '/edit-order' },
     { label: 'Laporan Pesanan', icon: documentText, path: '/reports' },
     { label: 'Laporan SKU', icon: barChart, path: '/sku-report' },
     { label: 'Tetapan', icon: settings, path: '/settings' },
-    { label: 'Selaraskan Data', icon: sync, path: '/sync' },
+    { label: 'Penyelarasan Data', icon: sync, path: '/sync' },
     { label: 'Bantuan', icon: helpCircle, path: '/help' },
     { label: 'Hak Cipta', icon: informationCircle, path: '/copyright' },
   ];

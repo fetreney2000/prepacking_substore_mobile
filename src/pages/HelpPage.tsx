@@ -13,7 +13,7 @@ const HelpPage: React.FC = () => {
             <IonCardContent>
               <div style={{ fontSize: '14px', lineHeight: '1.8' }}>
                 <h3 style={{ marginBottom: '12px', color: '#1E3A8A' }}>Pengenalan</h3>
-                <p style={{ marginBottom: '16px' }}>Sistem Inventori Prabungkus adalah aplikasi pengurusan inventori untuk <strong>Substor Hospital Keningau</strong>. Sistem ini membantu pengurus farmasi menjejaki stok ubat prabungkus, mengira tahap inventori optimum, membuat pesanan pembelian, dan menjana laporan.</p>
+                <p style={{ marginBottom: '16px' }}>Sistem Inventori Farmasi adalah aplikasi pengurusan inventori untuk <strong>Substor Hospital Keningau</strong>. Sistem ini membantu pengurus farmasi menjejaki stok ubat prabungkus, mengira tahap inventori optimum, membuat pesanan pembelian, dan menjana laporan.</p>
 
                 <h3 style={{ marginBottom: '12px', color: '#1E3A8A' }}>Papan Pemuka (Dashboard)</h3>
                 <p style={{ marginBottom: '8px' }}>Paparan utama menunjukkan ringkasan inventori:</p>

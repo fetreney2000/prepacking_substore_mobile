@@ -77,7 +77,7 @@ const SyncPage: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Selaraskan Data</IonTitle>
+          <IonTitle>Penyelarasan Data</IonTitle>
         </IonToolbar>
       </IonHeader>
 

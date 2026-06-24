@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { IonPage, IonContent, IonHeader, IonToolbar, IonTitle, IonButton, IonIcon,
-  IonInput, IonLabel, IonItem, IonSelect, IonSelectOption, IonRefresher, IonRefresherContent } from '@ionic/react';
+  IonInput, IonLabel, IonItem, IonRefresher, IonRefresherContent } from '@ionic/react';
 import { save } from 'ionicons/icons';
 import { useAppContext } from '../App';
 import { api } from '../utils/api';
@@ -12,8 +12,7 @@ const SettingsPage: React.FC = () => {
     minWeeks: 2,
     bufferWeeks: 4,
     maxWeeks: 6,
-    defaultFilename: '',
-    layoutMode: 'table' as string
+    defaultFilename: ''
   });
 
   useEffect(() => {
@@ -22,8 +21,7 @@ const SettingsPage: React.FC = () => {
       minWeeks: settings.minWeeks || 2,
       bufferWeeks: settings.bufferWeeks || 4,
       maxWeeks: settings.maxWeeks || 6,
-      defaultFilename: settings.defaultFilename || '',
-      layoutMode: settings.layoutMode || 'table'
+      defaultFilename: settings.defaultFilename || ''
     });
   }, [settings]);
 
@@ -34,10 +32,9 @@ const SettingsPage: React.FC = () => {
         minWeeks: Number(form.minWeeks) || 2,
         bufferWeeks: Number(form.bufferWeeks) || 4,
         maxWeeks: Number(form.maxWeeks) || 6,
-        defaultFilename: form.defaultFilename.trim(),
-        layoutMode: form.layoutMode
+        defaultFilename: form.defaultFilename.trim()
       });
-      document.title = form.appTitle || 'Sistem Inventori Prabungkus';
+      document.title = form.appTitle || 'Sistem Inventori Farmasi';
       showToast('Tetapan disimpan');
       await refreshData();
     } catch (err: any) {
@@ -86,13 +83,6 @@ const SettingsPage: React.FC = () => {
           <IonItem>
             <IonLabel position="stacked">Nama Fail Default</IonLabel>
             <IonInput value={form.defaultFilename} onIonInput={e => setForm({...form, defaultFilename: e.detail.value!})} />
-          </IonItem>
-          <IonItem>
-            <IonLabel position="stacked">Mod Paparan</IonLabel>
-            <IonSelect value={form.layoutMode} onIonChange={e => setForm({...form, layoutMode: e.detail.value})} interface="action-sheet">
-              <IonSelectOption value="table">Jadual</IonSelectOption>
-              <IonSelectOption value="card">Kad</IonSelectOption>
-            </IonSelect>
           </IonItem>
 
           <div style={{ padding: '16px 0' }}>

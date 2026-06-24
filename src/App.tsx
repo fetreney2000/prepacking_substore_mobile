@@ -34,8 +34,7 @@ const defaultSettings: AppSettings = {
   bufferWeeks: 4,
   maxWeeks: 6,
   defaultFilename: 'substor_bulk_prabungkus',
-  appTitle: 'Sistem Inventori Prabungkus Hospital Keningau',
-  layoutMode: 'table'
+  appTitle: 'Sistem Inventori Farmasi'
 };
 
 export const AppContext = createContext<AppContextType>({
@@ -93,6 +92,10 @@ const App: React.FC = () => {
     };
     load();
   }, [refreshData]);
+
+  useEffect(() => {
+    document.title = settings.appTitle || 'Sistem Inventori Prabungkus';
+  }, [settings.appTitle]);
 
   return (
     <IonApp>

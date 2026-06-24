@@ -88,7 +88,7 @@ const GroupsPage: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Kumpulan</IonTitle>
+          <IonTitle>Pengurusan Kumpulan</IonTitle>
           <IonButtons slot="end">
             <IonButton onClick={openAdd}>
               <IonIcon slot="icon-only" icon={add} />

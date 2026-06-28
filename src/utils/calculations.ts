@@ -36,7 +36,7 @@ export function determineStockStatus(sku: SKU, settings: AppSettings): StockStat
   const stok = sku.stokSemasa || 0;
   if (stok === 0) return 'out';
   if (stok <= levels.min) return 'critical';
-  if (stok <= levels.penimbal) return 'low';
+  if (stok < levels.penimbal) return 'low';
   return 'ok';
 }
 
